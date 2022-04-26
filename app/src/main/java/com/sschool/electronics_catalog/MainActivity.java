@@ -2,7 +2,11 @@ package com.sschool.electronics_catalog;
 
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.PopupMenu;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
@@ -54,5 +58,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onSettingsClick(MenuItem item) {
+
     }
+
+
 }

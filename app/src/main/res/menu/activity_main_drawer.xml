@@ -22,10 +22,12 @@
 <!--    </group>-->
     <group
         android:checkableBehavior="all">
+
         <item
             android:id="@+id/nav_mainpage"
             android:icon="@drawable/ic_menu_page"
             android:title="@string/menu_mainpage" />
+        <item android:title="@string/menu_categories" />
         <item
             android:id="@+id/nav_processors"
             android:icon="@drawable/ic_menu_processor"

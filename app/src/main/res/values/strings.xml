@@ -14,4 +14,5 @@
     <string name="menu_processors">Процессоры</string>
     <string name="menu_smartphones">Смартфоны</string>
     <string name="menu_videocards">Видеокарты</string>
+    <string name="menu_categories">Разделы</string>
 </resources>
