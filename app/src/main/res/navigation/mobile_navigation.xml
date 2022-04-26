@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_mainpage">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.sschool.electronics_catalog.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.sschool.electronics_catalog.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.sschool.electronics_catalog.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/nav_mainpage"
+        android:name="com.sschool.electronics_catalog.ui.all.MainPage"
+        android:label="@string/menu_mainpage"
+        tools:layout="@layout/fragment_main" />
+
+    <fragment
+        android:id="@+id/nav_processors"
+        android:name="com.sschool.electronics_catalog.ui.all.Processors"
+        android:label="@string/menu_processors"
+        tools:layout="@layout/fragment_processors" />
+
+    <fragment
+        android:id="@+id/nav_smartphones"
+        android:name="com.sschool.electronics_catalog.ui.all.Smartphones"
+        android:label="@string/menu_smartphones"
+        tools:layout="@layout/fragment_smartphones" />
+
+    <fragment
+        android:id="@+id/nav_videocards"
+        android:name="com.sschool.electronics_catalog.ui.all.Videocards"
+        android:label="@string/menu_videocards"
+        tools:layout="@layout/fragment_videocards" />
+</navigation>

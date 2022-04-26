@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Electronics</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Каталог электроники</string>
+    <string name="nav_header_subtitle">Легко, быстро и доступно!</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Настройки</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_mainpage">Главная</string>
+    <string name="menu_processors">Процессоры</string>
+    <string name="menu_smartphones">Смартфоны</string>
+    <string name="menu_videocards">Видеокарты</string>
+</resources>
