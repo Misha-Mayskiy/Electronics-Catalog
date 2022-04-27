@@ -15,4 +15,5 @@
     <string name="menu_smartphones">Смартфоны</string>
     <string name="menu_videocards">Видеокарты</string>
     <string name="menu_categories">Разделы</string>
+    <string name="action_authors">О приложении</string>
 </resources>
