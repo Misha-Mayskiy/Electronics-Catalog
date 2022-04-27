@@ -47,6 +47,7 @@
                 android:backgroundTintMode="multiply"
                 android:clickable="true"
                 android:fontFamily="@font/droid_sans"
+                android:onClick="onClick"
                 android:text="@string/choose_videocarts"
                 android:textAlignment="center"
                 android:textAllCaps="false"
