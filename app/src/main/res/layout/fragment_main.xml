@@ -14,10 +14,10 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0">
+        app:layout_constraintVertical_bias="0.0">
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
@@ -38,128 +38,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="12dp" />
 
-            <TextView
-                android:id="@+id/textView5"
-                android:layout_width="wrap_content"
-                android:layout_height="177dp"
-                android:background="@drawable/main_videocarts"
-                android:backgroundTint="#988383"
-                android:backgroundTintMode="multiply"
-                android:clickable="true"
+            <Button
+                android:id="@+id/buttonVideocards"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
                 android:fontFamily="@font/droid_sans"
-                android:onClick="onClick"
-                android:text="@string/choose_videocarts"
-                android:textAlignment="center"
-                android:textAllCaps="false"
-                android:textColor="#FFFFFF"
-                android:textSize="48sp"
-                android:textStyle="bold"
-                android:typeface="normal" />
-
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="8dp" />
-
-            <TextView
-                android:id="@+id/textView6"
-                android:layout_width="match_parent"
-                android:layout_height="177dp"
-                android:background="@drawable/main_videocarts"
-                android:backgroundTint="#988383"
-                android:backgroundTintMode="multiply"
-                android:clickable="true"
-                android:fontFamily="@font/droid_sans"
-                android:text="@string/choose_videocarts"
-                android:textAlignment="center"
-                android:textAllCaps="false"
-                android:textColor="#FFFFFF"
-                android:textSize="48sp"
-                android:textStyle="bold"
-                android:typeface="normal" />
-
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="8dp" />
-
-            <TextView
-                android:id="@+id/textView7"
-                android:layout_width="match_parent"
-                android:layout_height="177dp"
-                android:background="@drawable/main_videocarts"
-                android:backgroundTint="#988383"
-                android:backgroundTintMode="multiply"
-                android:clickable="true"
-                android:fontFamily="@font/droid_sans"
-                android:text="@string/choose_videocarts"
-                android:textAlignment="center"
-                android:textAllCaps="false"
-                android:textColor="#FFFFFF"
-                android:textSize="48sp"
-                android:textStyle="bold"
-                android:typeface="normal" />
-
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="8dp" />
-
-            <TextView
-                android:id="@+id/textView8"
-                android:layout_width="match_parent"
-                android:layout_height="177dp"
-                android:background="@drawable/main_videocarts"
-                android:backgroundTint="#988383"
-                android:backgroundTintMode="multiply"
-                android:clickable="true"
-                android:fontFamily="@font/droid_sans"
-                android:text="@string/choose_videocarts"
-                android:textAlignment="center"
-                android:textAllCaps="false"
-                android:textColor="#FFFFFF"
-                android:textSize="48sp"
-                android:textStyle="bold"
-                android:typeface="normal" />
-
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="8dp" />
-
-            <TextView
-                android:id="@+id/textView9"
-                android:layout_width="match_parent"
-                android:layout_height="177dp"
-                android:background="@drawable/main_videocarts"
-                android:backgroundTint="#988383"
-                android:backgroundTintMode="multiply"
-                android:clickable="true"
-                android:fontFamily="@font/droid_sans"
-                android:text="@string/choose_videocarts"
-                android:textAlignment="center"
-                android:textAllCaps="false"
-                android:textColor="#FFFFFF"
-                android:textSize="48sp"
-                android:textStyle="bold"
-                android:typeface="normal" />
-
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="8dp" />
-
-            <TextView
-                android:id="@+id/textView10"
-                android:layout_width="match_parent"
-                android:layout_height="177dp"
-                android:background="@drawable/main_videocarts"
-                android:backgroundTint="#988383"
-                android:backgroundTintMode="multiply"
-                android:clickable="true"
-                android:fontFamily="@font/droid_sans"
-                android:text="@string/choose_videocarts"
-                android:textAlignment="center"
-                android:textAllCaps="false"
-                android:textColor="#FFFFFF"
-                android:textSize="48sp"
-                android:textStyle="bold"
-                android:typeface="normal" />
+                android:text="Видеокарты"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
             <Space
                 android:layout_width="match_parent"

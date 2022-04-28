@@ -16,6 +16,6 @@
     <string name="menu_videocards">Видеокарты</string>
     <string name="menu_categories">Разделы</string>
     <string name="action_authors">О приложении</string>
-    <string name="choose_category">Выбор категории</string>
+    <string name="choose_category">Выбор раздела</string>
     <string name="choose_videocarts">Видеокарты</string>
 </resources>
