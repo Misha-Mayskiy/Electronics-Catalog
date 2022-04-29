@@ -14,8 +14,13 @@
     <string name="menu_processors">Процессоры</string>
     <string name="menu_smartphones">Смартфоны</string>
     <string name="menu_videocards">Видеокарты</string>
-    <string name="menu_categories">Разделы</string>
+    <string name="menu_computer_category">Компьютерная техника</string>
+    <string name="menu_smartphone_category">Смартфоны и другое</string>
     <string name="action_authors">О приложении</string>
     <string name="choose_category">Выбор раздела</string>
     <string name="choose_videocarts">Видеокарты</string>
+    <string name="button_videocards">Видеокарты</string>
+    <string name="button_processors">Процессоры</string>
+    <string name="button_smartphones">Смартфоны</string>
+    <string name="button_headphones">Наушники</string>
 </resources>

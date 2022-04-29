@@ -20,11 +20,11 @@ public class MainPage extends Fragment {
                              ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_main, container, false);
 
-//        Button buttonProcessors = (Button) view.findViewById(R.id.buttonProcessors);
-//        buttonProcessors.setOnClickListener(v -> {
-//            MainActivity activity = (MainActivity) getActivity();
-//            Objects.requireNonNull(activity).nextFragment(R.id.nav_processors);
-//        });
+        Button buttonProcessors = (Button) view.findViewById(R.id.buttonProcessors);
+        buttonProcessors.setOnClickListener(v -> {
+            MainActivity activity = (MainActivity) getActivity();
+            Objects.requireNonNull(activity).nextFragment(R.id.nav_processors);
+        });
 
         Button buttonVideocards = (Button) view.findViewById(R.id.buttonVideocards);
         buttonVideocards.setOnClickListener(v -> {
@@ -32,11 +32,17 @@ public class MainPage extends Fragment {
             Objects.requireNonNull(activity).nextFragment(R.id.nav_videocards);
         });
 
-//        Button buttonSmartphones = (Button) view.findViewById(R.id.buttonSmartphones);
-//        buttonSmartphones.setOnClickListener(v -> {
-//            MainActivity activity = (MainActivity) getActivity();
-//            Objects.requireNonNull(activity).nextFragment(R.id.nav_smartphones);
-//        });
+        Button buttonSmartphones = (Button) view.findViewById(R.id.buttonSmartphones);
+        buttonSmartphones.setOnClickListener(v -> {
+            MainActivity activity = (MainActivity) getActivity();
+            Objects.requireNonNull(activity).nextFragment(R.id.nav_smartphones);
+        });
+
+        Button buttonHeadphones = (Button) view.findViewById(R.id.buttonHeadphones);
+        buttonHeadphones.setOnClickListener(v -> {
+            MainActivity activity = (MainActivity) getActivity();
+            Objects.requireNonNull(activity).nextFragment(R.id.nav_headphones);
+        });
         return view;
     }
 }

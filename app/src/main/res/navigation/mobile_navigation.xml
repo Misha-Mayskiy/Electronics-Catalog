@@ -6,24 +6,6 @@
     app:startDestination="@+id/nav_mainpage">
 
     <fragment
-        android:id="@+id/nav_home"
-        android:name="com.sschool.electronics_catalog.ui.home.HomeFragment"
-        android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home" />
-
-    <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.sschool.electronics_catalog.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
-
-    <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.sschool.electronics_catalog.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
-
-    <fragment
         android:id="@+id/nav_mainpage"
         android:name="com.sschool.electronics_catalog.ui.all.MainPage"
         android:label="@string/menu_mainpage"
@@ -46,4 +28,10 @@
         android:name="com.sschool.electronics_catalog.ui.all.Videocards"
         android:label="@string/menu_videocards"
         tools:layout="@layout/fragment_videocards" />
+
+    <fragment
+        android:id="@+id/nav_headphones"
+        android:name="com.sschool.electronics_catalog.ui.all.Headphones"
+        android:label="@string/button_headphones"
+        tools:layout="@layout/fragment_headphones" />
 </navigation>

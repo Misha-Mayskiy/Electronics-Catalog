@@ -28,20 +28,29 @@
             android:icon="@drawable/ic_menu_page"
             android:title="@string/menu_mainpage" />
 
-        <item
-            android:title="@string/menu_categories"
-            android:textColor="#A18A8A"/>
-        <item
-            android:id="@+id/nav_processors"
-            android:icon="@drawable/ic_menu_processor"
-            android:title="@string/menu_processors" />
-        <item
-            android:id="@+id/nav_smartphones"
-            android:icon="@drawable/ic_menu_smartphone"
-            android:title="@string/menu_smartphones" />
+        <item android:title="@string/menu_computer_category" />
+
         <item
             android:id="@+id/nav_videocards"
             android:icon="@drawable/ic_menu_videocard"
             android:title="@string/menu_videocards" />
+
+        <item
+            android:id="@+id/nav_processors"
+            android:icon="@drawable/ic_menu_processor"
+            android:title="@string/menu_processors" />
+
+        <item android:title="@string/menu_smartphone_category" />
+
+        <item
+            android:id="@+id/nav_smartphones"
+            android:background="@drawable/ic_menu_smartphone"
+            android:title="@string/menu_smartphones" />
+
+        <item
+            android:id="@+id/nav_headphones"
+            android:icon="@drawable/ic_menu_headphones"
+            android:title="@string/button_headphones" />
+
     </group>
 </menu>
