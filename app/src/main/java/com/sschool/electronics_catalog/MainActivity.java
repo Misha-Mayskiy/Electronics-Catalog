@@ -1,7 +1,11 @@
 package com.sschool.electronics_catalog;
 
+import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
@@ -12,6 +16,8 @@ import androidx.navigation.ui.NavigationUI;
 
 import com.google.android.material.navigation.NavigationView;
 import com.sschool.electronics_catalog.databinding.ActivityMainBinding;
+import com.sschool.electronics_catalog.ui.all.Headphones;
+import com.sschool.electronics_catalog.ui.all.Processors;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -39,8 +45,28 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.main, menu);
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.main, menu);
         return true;
+    }
+
+
+    @SuppressLint("NonConstantResourceId")
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item)
+    {
+        // Операции для выбранного пункта меню
+        switch (item.getItemId())
+        {
+            case R.id.action_settings:
+                System.out.println("Settings showed");
+                return true;
+            case R.id.action_authors:
+                System.out.println("Authors showed");
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 
     @Override

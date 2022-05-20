@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/nav_mainpage"
         android:name="com.sschool.electronics_catalog.ui.all.MainPage"
-        android:label="@string/menu_mainpage"
+        android:label="@string/main_page"
         tools:layout="@layout/fragment_main" />
 
     <fragment

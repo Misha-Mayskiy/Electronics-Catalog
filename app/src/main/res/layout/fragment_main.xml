@@ -6,6 +6,17 @@
     android:layout_height="match_parent"
     tools:context=".ui.all.MainPage">
 
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="center"
+        android:src="@drawable/main_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -21,18 +32,6 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="20dp"
-                android:fontFamily="@font/droid_sans"
-                android:gravity="center"
-                android:text="@string/choose_category"
-                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-                android:textSize="20sp"
-                android:textStyle="bold" />
-
 
             <Space
                 android:layout_width="match_parent"
@@ -41,8 +40,8 @@
             <Button
                 android:id="@+id/buttonVideocards"
                 android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:layout_marginStart="10dp"
+                android:layout_height="140dp"
+                android:layout_marginStart="12dp"
                 android:layout_marginEnd="15dp"
                 android:fontFamily="@font/droid_sans"
                 android:text="@string/button_videocards"
@@ -56,8 +55,8 @@
             <Button
                 android:id="@+id/buttonProcessors"
                 android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:layout_marginStart="10dp"
+                android:layout_height="140dp"
+                android:layout_marginStart="12dp"
                 android:layout_marginEnd="15dp"
                 android:fontFamily="@font/droid_sans"
                 android:text="@string/button_processors"
@@ -71,8 +70,8 @@
             <Button
                 android:id="@+id/buttonSmartphones"
                 android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:layout_marginStart="10dp"
+                android:layout_height="140dp"
+                android:layout_marginStart="12dp"
                 android:layout_marginEnd="15dp"
                 android:fontFamily="@font/droid_sans"
                 android:text="@string/button_smartphones"
@@ -86,8 +85,8 @@
             <Button
                 android:id="@+id/buttonHeadphones"
                 android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:layout_marginStart="10dp"
+                android:layout_height="140dp"
+                android:layout_marginStart="12dp"
                 android:layout_marginEnd="15dp"
                 android:fontFamily="@font/droid_sans"
                 android:text="@string/button_headphones"
