@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "173893918674",
+    "project_id": "electronics-catalog-4aef1",
+    "storage_bucket": "electronics-catalog-4aef1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:173893918674:android:94953a9455329f15c4320b",
+        "android_client_info": {
+          "package_name": "com.sschool.electronics_catalog"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "173893918674-hgi0l3pcf7rqvlt20o11vps62s76ge2q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBH_2BzvzWC4BHvO6emR2hzVGRFEKdz360"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "173893918674-hgi0l3pcf7rqvlt20o11vps62s76ge2q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

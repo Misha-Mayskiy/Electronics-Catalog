@@ -1,10 +1,10 @@
-package com.sschool.electronics_catalog.ui.all;
+package com.school.electronics.ui.all;
 
 import android.os.Bundle;
 
 import androidx.preference.PreferenceFragmentCompat;
 
-import com.sschool.electronics_catalog.R;
+import com.school.electronics.R;
 
 public class SettingsFragment extends PreferenceFragmentCompat {
 

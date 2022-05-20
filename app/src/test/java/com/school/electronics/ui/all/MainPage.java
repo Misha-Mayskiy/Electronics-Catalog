@@ -1,4 +1,4 @@
-package com.sschool.electronics_catalog.ui.all;
+package com.school.electronics.ui.all;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -9,8 +9,8 @@ import android.widget.Button;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
-import com.sschool.electronics_catalog.MainActivity;
-import com.sschool.electronics_catalog.R;
+import com.school.electronics.MainActivity;
+import com.school.electronics.R;
 
 import java.util.Objects;
 

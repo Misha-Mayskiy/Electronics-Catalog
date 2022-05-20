@@ -1,4 +1,4 @@
-package com.sschool.electronics_catalog.ui.all;
+package com.school.electronics.ui.all;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -8,7 +8,7 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
-import com.sschool.electronics_catalog.R;
+import com.school.electronics.R;
 
 public class Videocards extends Fragment {
 

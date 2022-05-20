@@ -7,31 +7,31 @@
 
     <fragment
         android:id="@+id/nav_mainpage"
-        android:name="com.sschool.electronics_catalog.ui.all.MainPage"
+        android:name="com.school.electronics.ui.all.MainPage"
         android:label="@string/main_page"
         tools:layout="@layout/fragment_main" />
 
     <fragment
         android:id="@+id/nav_processors"
-        android:name="com.sschool.electronics_catalog.ui.all.Processors"
+        android:name="com.school.electronics.ui.all.Processors"
         android:label="@string/menu_processors"
         tools:layout="@layout/fragment_processors" />
 
     <fragment
         android:id="@+id/nav_smartphones"
-        android:name="com.sschool.electronics_catalog.ui.all.Smartphones"
+        android:name="com.school.electronics.ui.all.Smartphones"
         android:label="@string/menu_smartphones"
         tools:layout="@layout/fragment_smartphones" />
 
     <fragment
         android:id="@+id/nav_videocards"
-        android:name="com.sschool.electronics_catalog.ui.all.Videocards"
+        android:name="com.school.electronics.ui.all.Videocards"
         android:label="@string/menu_videocards"
         tools:layout="@layout/fragment_videocards" />
 
     <fragment
         android:id="@+id/nav_headphones"
-        android:name="com.sschool.electronics_catalog.ui.all.Headphones"
+        android:name="com.school.electronics.ui.all.Headphones"
         android:label="@string/button_headphones"
         tools:layout="@layout/fragment_headphones" />
 </navigation>

@@ -1,4 +1,4 @@
-package com.sschool.electronics_catalog;
+package com.school.electronics;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
@@ -14,7 +14,7 @@ import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
 import com.google.android.material.navigation.NavigationView;
-import com.sschool.electronics_catalog.databinding.ActivityMainBinding;
+import com.school.electronics.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
 
