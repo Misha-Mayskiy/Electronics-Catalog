@@ -1,7 +1,6 @@
 package com.sschool.electronics_catalog;
 
 import android.annotation.SuppressLint;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -16,8 +15,6 @@ import androidx.navigation.ui.NavigationUI;
 
 import com.google.android.material.navigation.NavigationView;
 import com.sschool.electronics_catalog.databinding.ActivityMainBinding;
-import com.sschool.electronics_catalog.ui.all.Headphones;
-import com.sschool.electronics_catalog.ui.all.Processors;
 
 public class MainActivity extends AppCompatActivity {
 
