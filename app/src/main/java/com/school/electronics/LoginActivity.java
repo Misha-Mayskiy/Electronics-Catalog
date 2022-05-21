@@ -36,14 +36,13 @@ public class LoginActivity extends AppCompatActivity {
 
         mAuth = FirebaseAuth.getInstance();
 
-//        register_text.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent intent = new Intent(LoginActivity.this,
-//                        RegisterActivity.class);
-//                startActivity(intent);
-//            }
-//        });
+        register_text.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
+                startActivity(intent);
+            }
+        });
 
         button_login.setOnClickListener(new View.OnClickListener() {
             @Override
