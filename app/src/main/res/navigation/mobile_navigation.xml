@@ -9,29 +9,58 @@
         android:id="@+id/nav_mainpage"
         android:name="com.school.electronics.ui.all.MainPage"
         android:label="@string/main_page"
-        tools:layout="@layout/fragment_main" />
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_nav_mainpage_to_nav_processors2"
+            app:destination="@id/nav_processors" />
+        <action
+            android:id="@+id/action_nav_mainpage_to_nav_headphones"
+            app:destination="@id/nav_headphones" />
+        <action
+            android:id="@+id/action_nav_mainpage_to_nav_videocards"
+            app:destination="@id/nav_videocards" />
+        <action
+            android:id="@+id/action_nav_mainpage_to_nav_smartphones"
+            app:destination="@id/nav_smartphones" />
+    </fragment>
 
     <fragment
         android:id="@+id/nav_processors"
         android:name="com.school.electronics.ui.all.Processors"
         android:label="@string/menu_processors"
-        tools:layout="@layout/fragment_processors" />
+        tools:layout="@layout/fragment_processors" >
+        <action
+            android:id="@+id/action_nav_processors_to_nav_mainpage"
+            app:destination="@id/nav_mainpage" />
+    </fragment>
 
     <fragment
         android:id="@+id/nav_smartphones"
         android:name="com.school.electronics.ui.all.Smartphones"
         android:label="@string/menu_smartphones"
-        tools:layout="@layout/fragment_smartphones" />
+        tools:layout="@layout/fragment_smartphones" >
+        <action
+            android:id="@+id/action_nav_smartphones_to_nav_mainpage"
+            app:destination="@id/nav_mainpage" />
+    </fragment>
 
     <fragment
         android:id="@+id/nav_videocards"
         android:name="com.school.electronics.ui.all.Videocards"
         android:label="@string/menu_videocards"
-        tools:layout="@layout/fragment_videocards" />
+        tools:layout="@layout/fragment_videocards" >
+        <action
+            android:id="@+id/action_nav_videocards_to_nav_mainpage"
+            app:destination="@id/nav_mainpage" />
+    </fragment>
 
     <fragment
         android:id="@+id/nav_headphones"
         android:name="com.school.electronics.ui.all.Headphones"
         android:label="@string/button_headphones"
-        tools:layout="@layout/fragment_headphones" />
+        tools:layout="@layout/fragment_headphones" >
+        <action
+            android:id="@+id/action_nav_headphones_to_nav_mainpage"
+            app:destination="@id/nav_mainpage" />
+    </fragment>
 </navigation>
