@@ -2,18 +2,13 @@ package com.school.electronics;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
-import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class LoginActivity extends AppCompatActivity {
@@ -36,38 +31,29 @@ public class LoginActivity extends AppCompatActivity {
 
         mAuth = FirebaseAuth.getInstance();
 
-        register_text.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
-                startActivity(intent);
-            }
+        register_text.setOnClickListener(view -> {
+            Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
+            startActivity(intent);
         });
 
-        button_login.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (email_login.getText().toString().isEmpty() ||
-                        password_login.getText().toString().isEmpty()){
-                    Toast.makeText(LoginActivity.this,
-                            "Поля не могут быть пустыми",
-                            Toast.LENGTH_SHORT).show();
-                } else {
-                    mAuth.signInWithEmailAndPassword(email_login.getText().toString(),
-                            password_login.getText().toString()).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-                        @Override
-                        public void onComplete(@NonNull Task<AuthResult> task) {
+        button_login.setOnClickListener(view -> {
+            if (email_login.getText().toString().isEmpty() ||
+                    password_login.getText().toString().isEmpty()){
+                Toast.makeText(LoginActivity.this,
+                        "Поля не могут быть пустыми",
+                        Toast.LENGTH_SHORT).show();
+            } else {
+                mAuth.signInWithEmailAndPassword(email_login.getText().toString(),
+                        password_login.getText().toString()).addOnCompleteListener(task -> {
                             if (task.isSuccessful()) {
                                 Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                                 startActivity(intent);
                             } else {
                                 Toast.makeText(LoginActivity.this,
-                                        "Error: some error",
+                                        "Неизвестная ошибка",
                                         Toast.LENGTH_SHORT).show();
                             }
-                        }
-                    });
-                }
+                        });
             }
         });
     }
