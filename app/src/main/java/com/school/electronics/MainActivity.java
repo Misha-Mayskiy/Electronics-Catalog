@@ -22,12 +22,22 @@ import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.QueryDocumentSnapshot;
+import com.google.firebase.firestore.QuerySnapshot;
 import com.school.electronics.databinding.ActivityMainBinding;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
     private NavController navController;
+
+    private List<String> cpus = new ArrayList<String>();
+    private List<String> gpus = new ArrayList<String>();
+    private List<String> phones = new ArrayList<String>();
+    private List<String> earbuds = new ArrayList<String>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,8 +58,58 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupWithNavController(navigationView, navController);
 
         FirebaseFirestore db = FirebaseFirestore.getInstance();
-        
-
+        db.collection("products").document("electronics").collection("CPUs").get()
+                .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                    @Override
+                    public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                        if (task.isSuccessful()) {
+                            for (QueryDocumentSnapshot document : task.getResult()) {
+                                cpus.add(document.getId());
+                            }
+                        } else {
+                            Log.d("DOCUMENT", "Error getting documents: ", task.getException());
+                        }
+                    }
+                });
+        db.collection("products").document("electronics").collection("GPUs").get()
+                .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                    @Override
+                    public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                        if (task.isSuccessful()) {
+                            for (QueryDocumentSnapshot document : task.getResult()) {
+                                gpus.add(document.getId());
+                            }
+                        } else {
+                            Log.d("DOCUMENT", "Error getting documents: ", task.getException());
+                        }
+                    }
+                });
+        db.collection("products").document("electronics").collection("Earbuds").get()
+                .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                    @Override
+                    public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                        if (task.isSuccessful()) {
+                            for (QueryDocumentSnapshot document : task.getResult()) {
+                                earbuds.add(document.getId());
+                            }
+                        } else {
+                            Log.d("DOCUMENT", "Error getting documents: ", task.getException());
+                        }
+                    }
+                });
+        db.collection("products").document("electronics").collection("Phones").get()
+                .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                    @Override
+                    public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                        if (task.isSuccessful()) {
+                            for (QueryDocumentSnapshot document : task.getResult()) {
+                                phones.add(document.getId());
+                            }
+                        } else {
+                            Log.d("DOCUMENT", "Error getting documents: ", task.getException());
+                        }
+                    }
+                });
     }
 
     @Override
@@ -83,6 +143,27 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                 || super.onSupportNavigateUp();
+    }
+
+    public String[] getCPUs() {
+        String[] allcpus = new String[cpus.size()];
+        cpus.toArray(allcpus);
+        return allcpus;
+    }
+    public String[] getGPUs() {
+        String[] allgpus = new String[gpus.size()];
+        cpus.toArray(allgpus);
+        return allgpus;
+    }
+    public String[] getEarbuds() {
+        String[] allbuds = new String[earbuds.size()];
+        cpus.toArray(allbuds);
+        return allbuds;
+    }
+    public String[] getPhones() {
+        String[] allphones = new String[phones.size()];
+        cpus.toArray(allphones);
+        return allphones;
     }
 
     public void nextFragment(int fragment_id) {

@@ -21,6 +21,7 @@ import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
+import com.school.electronics.MainActivity;
 import com.school.electronics.R;
 
 import org.xmlpull.v1.XmlPullParser;
@@ -36,34 +37,16 @@ public class Processors extends Fragment {
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_processors, container, false);
 
-
-        db.collection("products").document("electronics").collection("CPUs").get()
-                .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
-                    @Override
-                    public void onComplete(@NonNull Task<QuerySnapshot> task) {
-                        if (task.isSuccessful()) {
-                            for (QueryDocumentSnapshot document : task.getResult()) {
-//                                Log.d("DOCUMENT", document.getId() + " => " + document.getData());
-                                cpus.add(document.getId());
-                                Log.d("DOCUMENT", cpus.toString());
-                            }
-                        } else {
-                            Log.d("DOCUMENT", "Error getting documents: ", task.getException());
-                        }
-                    }
-                });
-
-        return view;
+        return inflater.inflate(R.layout.fragment_processors, container, false);
     }
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.recView);
-        String[] allcpus = new String[cpus.size()];
-        cpus.toArray(allcpus);
+        MainActivity activity = (MainActivity) getActivity();
+        String[] allcpus = activity.getCPUs();
         MyAdapter myAdapter = new MyAdapter(this.getContext(), allcpus, image);
         recyclerView.setAdapter(myAdapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this.getActivity()));
