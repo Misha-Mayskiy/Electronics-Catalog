@@ -1,8 +1,12 @@
 package com.school.electronics.ui.all;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -39,6 +43,10 @@ public class CpuDescription extends AppCompatActivity {
             cpu = extras.getString("cpu");
         }
 
+        Button btnM = findViewById(R.id.button);
+        Button btnD = findViewById(R.id.button2);
+        Button btnS = findViewById(R.id.button3);
+
         FirebaseFirestore db = FirebaseFirestore.getInstance();
         db.collection("products").document("electronics").collection("CPUs").document(cpu).get()
                 .addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
@@ -57,7 +65,7 @@ public class CpuDescription extends AppCompatActivity {
                             cpuifull = cpuifull + (String) cpui.get("releasedate") + "\n";
                             cpuifull = cpuifull + (String) cpui.get("socket") + "\n";
                             cpuifull = cpuifull + (String) cpui.get("techprocess") + "\n";
-                            cpuifull = cpuifull + (String) cpui.get("cacheL2L3") + "\n";
+                            cpuifull = cpuifull + (String) cpui.get("threads").toString();
 
 
                         } else {
@@ -66,11 +74,35 @@ public class CpuDescription extends AppCompatActivity {
                         cpuInfo.setText(cpuifull);
                     }
                 });
-
-
-
         cpuName.setText(cpu);
+        btnM.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String url = "https://www.mvideo.ru/product-list-page?q="+cpuName.getText();
+                goToUrl(url);
+            }
+        });
+        btnD.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String url = "https://www.dns-shop.ru/search/?q="+cpuName.getText();
+                goToUrl(url);
+            }
+        });
+        btnS.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String url = "https://www.citilink.ru/search/?text="+cpuName.getText();
+                goToUrl(url);
+            }
+        });
+
+
 
     }
-
+    private void goToUrl(String url) {
+        Uri uriUrl = Uri.parse(url) ;
+        Intent launchBrowser = new Intent(Intent.ACTION_VIEW, uriUrl) ;
+        startActivity(launchBrowser) ;
+    }
 }
