@@ -3,12 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Alexander/AndroidStudioProjects/ElectronicsCatalog/app/src/main/res/drawable-v24/gradient_bg.xml" value="0.2245" />
         <entry key="..\:/Users/Alexander/AndroidStudioProjects/ElectronicsCatalog/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1835" />
         <entry key="..\:/Users/Alexander/AndroidStudioProjects/ElectronicsCatalog/app/src/main/res/drawable/ic_launcher_background.xml" value="0.183" />
         <entry key="..\:/Users/Alexander/AndroidStudioProjects/ElectronicsCatalog/app/src/main/res/drawable/side_nav_bar.xml" value="0.287" />
+        <entry key="..\:/Users/Alexander/AndroidStudioProjects/ElectronicsCatalog/app/src/main/res/layout/activity_login.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Alexander/AndroidStudioProjects/ElectronicsCatalog/app/src/main/res/layout/activity_main.xml" value="0.3582427536231884" />
         <entry key="..\:/Users/Alexander/AndroidStudioProjects/ElectronicsCatalog/app/src/main/res/layout/app_bar_main.xml" value="0.14629629629629629" />
+        <entry key="..\:/Users/Alexander/AndroidStudioProjects/ElectronicsCatalog/app/src/main/res/layout/buds_description.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Alexander/AndroidStudioProjects/ElectronicsCatalog/app/src/main/res/layout/content_main.xml" value="0.17831813576494426" />
+        <entry key="..\:/Users/Alexander/AndroidStudioProjects/ElectronicsCatalog/app/src/main/res/layout/cpu_description.xml" value="0.35260416666666666" />
         <entry key="..\:/Users/Alexander/AndroidStudioProjects/ElectronicsCatalog/app/src/main/res/layout/fragment_gallery.xml" value="0.17831813576494426" />
         <entry key="..\:/Users/Alexander/AndroidStudioProjects/ElectronicsCatalog/app/src/main/res/layout/fragment_headphones.xml" value="0.24682971014492755" />
         <entry key="..\:/Users/Alexander/AndroidStudioProjects/ElectronicsCatalog/app/src/main/res/layout/fragment_home.xml" value="0.17831813576494426" />
@@ -18,27 +22,19 @@
         <entry key="..\:/Users/Alexander/AndroidStudioProjects/ElectronicsCatalog/app/src/main/res/layout/fragment_slideshow.xml" value="0.17831813576494426" />
         <entry key="..\:/Users/Alexander/AndroidStudioProjects/ElectronicsCatalog/app/src/main/res/layout/fragment_smartphones.xml" value="0.17831813576494426" />
         <entry key="..\:/Users/Alexander/AndroidStudioProjects/ElectronicsCatalog/app/src/main/res/layout/fragment_videocards.xml" value="0.17831813576494426" />
+        <entry key="..\:/Users/Alexander/AndroidStudioProjects/ElectronicsCatalog/app/src/main/res/layout/gpu_description.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Alexander/AndroidStudioProjects/ElectronicsCatalog/app/src/main/res/layout/item_description.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Alexander/AndroidStudioProjects/ElectronicsCatalog/app/src/main/res/layout/nav_header_main.xml" value="0.3582427536231884" />
+        <entry key="..\:/Users/Alexander/AndroidStudioProjects/ElectronicsCatalog/app/src/main/res/layout/phone_description.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Alexander/AndroidStudioProjects/ElectronicsCatalog/app/src/main/res/layout/productcard.xml" value="0.33" />
         <entry key="..\:/Users/Alexander/AndroidStudioProjects/ElectronicsCatalog/app/src/main/res/menu/activity_main_drawer.xml" value="0.33" />
         <entry key="..\:/Users/Alexander/AndroidStudioProjects/ElectronicsCatalog/app/src/main/res/menu/main.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Alexander/AndroidStudioProjects/ElectronicsCatalog/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.134" />
         <entry key="..\:/Users/Alexander/AndroidStudioProjects/ElectronicsCatalog/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.134" />
-        <entry key="..\:/Users/Student/Desktop/Electronics-Catalog/app/src/main/res/layout/buds_description.xml" value="0.33" />
-        <entry key="..\:/Users/Student/Desktop/Electronics-Catalog/app/src/main/res/layout/cpu_description.xml" value="0.25" />
-        <entry key="..\:/Users/Student/Desktop/Electronics-Catalog/app/src/main/res/layout/gpu_description.xml" value="0.25" />
-        <entry key="..\:/Users/Student/Desktop/Electronics-Catalog/app/src/main/res/layout/phone_description.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/activity_cpu_description.xml" value="0.33" />
-        <entry key="app/src/main/res/layout/activity_item_description.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.18072916666666666" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.18072916666666666" />
         <entry key="app/src/main/res/layout/activity_register.xml" value="0.18072916666666666" />
         <entry key="app/src/main/res/layout/app_bar_main.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/content_main.xml" value="0.23177083333333334" />
-        <entry key="app/src/main/res/layout/fragment_main.xml" value="0.23177083333333334" />
-        <entry key="app/src/main/res/layout/fragment_processors.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/fragment_product_info.xml" value="0.23177083333333334" />
-        <entry key="app/src/main/res/layout/item_description.xml" value="0.23072916666666668" />
-        <entry key="app/src/main/res/layout/productcard.xml" value="0.25" />
         <entry key="app/src/main/res/menu/main.xml" value="0.18072916666666666" />
       </map>
     </option>
