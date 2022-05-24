@@ -27,6 +27,9 @@ android {
     buildFeatures {
         viewBinding true
     }
+    packagingOptions {
+        exclude 'META-INF/androidx.cardview_cardview.version'
+    }
     namespace 'com.school.electronics'
     buildToolsVersion '32.0.0'
 }
