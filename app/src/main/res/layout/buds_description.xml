@@ -23,7 +23,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
         android:layout_marginTop="80dp"
-        android:text="Сокет\nКоличество ядер\nОбъем кэша L2/L3\nОперативная память\nТепловыделение\nТехпроцесс\nКоличество потоков\nЯдро процессора\nДата выхода"
+        android:text="Объем кэша L2/L3\nКоличество ядер\nЯдро процессора\nТепловыделение\nОперативная память\nДата выхода\nСокет\nТехпроцесс\nКоличество потоков"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cpuimg" />
