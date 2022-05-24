@@ -18,6 +18,7 @@ import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 public class CpuDescription extends AppCompatActivity {
 
@@ -42,11 +43,17 @@ public class CpuDescription extends AppCompatActivity {
                         DocumentSnapshot document = task.getResult();
                         if (document.exists()) {
                             Log.d("DOCUMENT", "document" + document.getData());
-                            String infofull = null;
-                            List<String> infoc = (List<String>) document.getData();
-                            for (int i = 0; i < infoc.size(); i++){
-                                infofull = infofull + infoc.get(i) + "\n";
-                            }
+//                            String infofull = null;
+//                            List<String> infoc = null;
+//                            for (Map.Entry<String, Object> entry : document.getData().entrySet()) {
+//                                String key = entry.getKey();
+//                                String value = (String) entry.getValue();
+//                                infoc.add(key);
+//                            }
+//                            Log.d("VALUE", infoc.toString());
+//                            for (int i = 0; i < infoc.size(); i++){
+//                                infofull = infofull + infoc.get(i) + "\n";
+//                            }
                         } else {
                             Log.d("DOCUMENT", "No such document");
                         }
