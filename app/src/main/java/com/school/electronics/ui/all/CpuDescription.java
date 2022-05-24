@@ -1,5 +1,6 @@
 package com.school.electronics.ui.all;
 
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.TextView;
@@ -14,11 +15,15 @@ import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.school.electronics.R;
 
-import org.w3c.dom.Text;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
 
 public class CpuDescription extends AppCompatActivity {
 
@@ -33,7 +38,6 @@ public class CpuDescription extends AppCompatActivity {
         if(extras != null){
             cpu = extras.getString("cpu");
         }
-        String cputest = cpu;
 
         FirebaseFirestore db = FirebaseFirestore.getInstance();
         db.collection("products").document("electronics").collection("CPUs").document(cpu).get()
@@ -68,4 +72,5 @@ public class CpuDescription extends AppCompatActivity {
         cpuName.setText(cpu);
 
     }
+
 }

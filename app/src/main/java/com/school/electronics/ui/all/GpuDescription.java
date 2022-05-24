@@ -15,7 +15,7 @@ public class GpuDescription extends AppCompatActivity {
         setContentView(R.layout.gpu_description);
         TextView gpuName = findViewById(R.id.gpuname);
 
-        String gpu = "cpu not set";
+        String gpu = "gpu not set";
 
         Bundle extras = getIntent().getExtras();
         if(extras != null){

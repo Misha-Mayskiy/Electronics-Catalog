@@ -34,10 +34,10 @@ public class MainActivity extends AppCompatActivity {
     private AppBarConfiguration mAppBarConfiguration;
     private NavController navController;
 
-    private List<String> cpus = new ArrayList<String>();
-    private List<String> gpus = new ArrayList<String>();
-    private List<String> phones = new ArrayList<String>();
-    private List<String> earbuds = new ArrayList<String>();
+    private final List<String> cpus = new ArrayList<String>();
+    private final List<String> gpus = new ArrayList<String>();
+    private final List<String> phones = new ArrayList<String>();
+    private final List<String> earbuds = new ArrayList<String>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -45,7 +45,7 @@ public class Videocards extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.recView);
+        RecyclerView recyclerView = view.findViewById(R.id.recView);
         MainActivity activity = (MainActivity) getActivity();
         String[] allgpus = activity.getGPUs();
         setOnClickListener();
