@@ -8,19 +8,19 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.school.electronics.R;
 
-public class CpuDescription extends AppCompatActivity {
+public class GpuDescription extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.cpu_description);
-        TextView cpuName = findViewById(R.id.cpuname);
+        setContentView(R.layout.gpu_description);
+        TextView gpuName = findViewById(R.id.gpuname);
 
-        String cpu = "cpu not set";
+        String gpu = "cpu not set";
 
         Bundle extras = getIntent().getExtras();
         if(extras != null){
-            cpu = extras.getString("cpu");
+            gpu = extras.getString("gpu");
         }
-        cpuName.setText(cpu);
+        gpuName.setText(gpu);
     }
 }

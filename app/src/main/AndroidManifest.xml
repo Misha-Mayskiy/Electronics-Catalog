@@ -41,6 +41,10 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity android:name=".ui.all.CpuDescription"/>
+        <activity android:name=".ui.all.GpuDescription"/>
+        <activity android:name=".ui.all.PhoneDescription"/>
+        <activity android:name=".ui.all.BudsDescription"/>
     </application>
 
 </manifest>

@@ -2,6 +2,7 @@ package com.school.electronics.ui.all;
 
 import static android.content.ContentValues.TAG;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -32,6 +33,7 @@ import java.util.List;
 public class Headphones extends Fragment {
 
     int image = R.drawable.buds;
+    private MyAdapter.RecyclerViewClickListener listener;
     FirebaseFirestore db = FirebaseFirestore.getInstance();
 
     public View onCreateView(@NonNull LayoutInflater inflater,
@@ -46,8 +48,22 @@ public class Headphones extends Fragment {
         RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.recView);
         MainActivity activity = (MainActivity) getActivity();
         String[] allbuds = activity.getEarbuds();
-        MyAdapter myAdapter = new MyAdapter(this.getContext(), allbuds, image);
+        setOnClickListener();
+        MyAdapter myAdapter = new MyAdapter(this.getContext(), allbuds, image, listener);
         recyclerView.setAdapter(myAdapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this.getActivity()));
     }
+    private void setOnClickListener() {
+        listener = new MyAdapter.RecyclerViewClickListener() {
+            @Override
+            public void onClick(View v, int position) {
+                Intent intent = new Intent(getContext(), BudsDescription.class);
+                MainActivity activity = (MainActivity) getActivity();
+                String[] allbuds = activity.getEarbuds();
+                intent.putExtra("buds", allbuds[position]);
+                startActivity(intent);
+            }
+        };
+    }
+
 }

@@ -20,10 +20,13 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
     int image;
     Context context;
 
-    public MyAdapter(Context ct, String[] s1, int img){
+    private RecyclerViewClickListener listener;
+
+    public MyAdapter(Context ct, String[] s1, int img, RecyclerViewClickListener listener){
         context = ct;
         data1 = s1;
         image = img;
+        this.listener = listener;
     }
 
     @NonNull
@@ -47,7 +50,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
         return data1.length;
     }
 
-    public class MyViewHolder extends RecyclerView.ViewHolder{
+    public class MyViewHolder extends RecyclerView.ViewHolder implements  View.OnClickListener{
         TextView myText;
         ImageView myImage;
 
@@ -55,6 +58,16 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
             super(itemView);
             myText = itemView.findViewById(R.id.prodName);
             myImage = itemView.findViewById(R.id.prodImage);
+            itemView.setOnClickListener(this);
         }
+
+        @Override
+        public void onClick(View view) {
+            listener.onClick(view, getAdapterPosition());
+        }
+    }
+
+    public interface RecyclerViewClickListener{
+        void onClick(View v, int position);
     }
 }

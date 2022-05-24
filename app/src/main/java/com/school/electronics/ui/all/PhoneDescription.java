@@ -8,19 +8,19 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.school.electronics.R;
 
-public class CpuDescription extends AppCompatActivity {
+public class PhoneDescription extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.cpu_description);
-        TextView cpuName = findViewById(R.id.cpuname);
+        setContentView(R.layout.phone_description);
+        TextView phoneName = findViewById(R.id.phonename);
 
-        String cpu = "cpu not set";
+        String phone = "phone not set";
 
         Bundle extras = getIntent().getExtras();
         if(extras != null){
-            cpu = extras.getString("cpu");
+            phone = extras.getString("phone");
         }
-        cpuName.setText(cpu);
+        phoneName.setText(phone);
     }
 }
