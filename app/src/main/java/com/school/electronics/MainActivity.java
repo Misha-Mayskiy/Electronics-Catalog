@@ -152,17 +152,17 @@ public class MainActivity extends AppCompatActivity {
     }
     public String[] getGPUs() {
         String[] allgpus = new String[gpus.size()];
-        cpus.toArray(allgpus);
+        gpus.toArray(allgpus);
         return allgpus;
     }
     public String[] getEarbuds() {
         String[] allbuds = new String[earbuds.size()];
-        cpus.toArray(allbuds);
+        earbuds.toArray(allbuds);
         return allbuds;
     }
     public String[] getPhones() {
         String[] allphones = new String[phones.size()];
-        cpus.toArray(allphones);
+        phones.toArray(allphones);
         return allphones;
     }
 

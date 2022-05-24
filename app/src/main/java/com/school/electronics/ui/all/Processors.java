@@ -31,7 +31,6 @@ import java.util.List;
 
 public class Processors extends Fragment {
 
-    List<String> cpus = new ArrayList<String>();
     int image = R.drawable.cpu;
     FirebaseFirestore db = FirebaseFirestore.getInstance();
 
