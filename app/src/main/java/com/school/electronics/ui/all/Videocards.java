@@ -31,7 +31,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Videocards extends Fragment {
-
     int image = R.drawable.gpu;
     private MyAdapter.RecyclerViewClickListener listener;
     FirebaseFirestore db = FirebaseFirestore.getInstance();

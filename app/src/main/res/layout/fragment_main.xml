@@ -45,6 +45,7 @@
                 android:layout_marginEnd="15dp"
                 android:fontFamily="@font/droid_sans"
                 android:text="@string/button_videocards"
+                android:textColor="#FFFFFF"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
@@ -60,6 +61,7 @@
                 android:layout_marginEnd="15dp"
                 android:fontFamily="@font/droid_sans"
                 android:text="@string/button_processors"
+                android:textColor="#FFFFFF"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
@@ -75,6 +77,7 @@
                 android:layout_marginEnd="15dp"
                 android:fontFamily="@font/droid_sans"
                 android:text="@string/button_smartphones"
+                android:textColor="#FFFFFF"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
@@ -90,6 +93,7 @@
                 android:layout_marginEnd="15dp"
                 android:fontFamily="@font/droid_sans"
                 android:text="@string/button_headphones"
+                android:textColor="#FFFFFF"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
